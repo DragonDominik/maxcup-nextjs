@@ -1,0 +1,14 @@
+{
+    "PAGE": {
+        "title": "Max Cup | Egyedi Re-Pohár – Gyártás, Bérlés & Mosás",
+        "description": "Re-pohár minden eseményre. Egyedi Re-pohár gyártás vagy bérlés és mosás, olvass tovább és kérj személyre szabott ajánlatát."
+    },
+    "BANNER": {
+        "title": "Hello"
+    },
+    "LocaleSwitcher": {
+        "en": "English",
+        "hu": "Hungarian",
+        "switchLocale": "Switch Lang"
+    }
+}

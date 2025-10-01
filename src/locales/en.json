@@ -1,0 +1,14 @@
+{
+    "PAGE": {
+        "title": "Max Cup | Re-Cups – Production, Renting & Washing",
+        "description": "Get re-cups for every event. Rent, wash, and use reusable cups. Custom production available and request your personalized eco-friendly offer."
+    },
+    "BANNER": {
+        "title": "Hello"
+    },
+    "LocaleSwitcher": {
+        "en": "English",
+        "hu": "Hungarian",
+        "switchLocale": "Switch Lang"
+    }
+}
