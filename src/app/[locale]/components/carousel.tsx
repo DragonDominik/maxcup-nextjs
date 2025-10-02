@@ -65,7 +65,7 @@ const Carousel: React.FC = () => {
 
   return (
     <div className="w-full">
-      {/* Desktop version - 4 cards */}
+      {/* Desktop */}
       <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {cards.map((card) => (
           <USALProvider key={card.id}>
@@ -97,7 +97,7 @@ const Carousel: React.FC = () => {
         ))}
       </div>
 
-      {/* Mobile version - carousel */}
+      {/* Mobil */}
       <USALProvider>
         <div className="md:hidden relative" data-usal="fade-u delay-100 duration-1000 threshold-60">
           <div className="overflow-hidden rounded-lg px-4">

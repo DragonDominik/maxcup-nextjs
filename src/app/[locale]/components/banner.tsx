@@ -35,7 +35,7 @@ export default function Banner({ }) {
             className="flex flex-col relative w-screen h-screen bg-cover bg-center m-0 p-0 max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw]"
             style={{ backgroundImage: `url('/img/bg.webp')` }}
         >
-            {/* White capsule background */}
+            {/* Fehér kapszula */}
             <USALProvider>
                 <div className="hidden md:block absolute right-0 top-0 w-1/2 h-screen max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw] bg-white/55 rounded-l-full" data-usal="slide-l-100 threshold-0 once delay-500 duration-2000"></div>
             </USALProvider>
@@ -43,7 +43,7 @@ export default function Banner({ }) {
             {/* Desktop Navbar */}
             <USALProvider>
                 <nav className="relative z-50 top-0 left-0 w-full px-4 py-4 hidden lg:flex items-center justify-between sintony" data-usal="slide-d-150 delay-1500 duration-1000 threshold-0 once">
-                    {/* Left Menu */}
+                    {/* Bal*/}
                     <div className="flex gap-2 xl:gap-5 text-[var(--light-blue)] shadow-custom-text">
                         {["cups", "production", "renting", "washing", "logistics"].map((section) => (
                             <a
@@ -56,7 +56,7 @@ export default function Banner({ }) {
                         ))}
                     </div>
 
-                    {/* Right Menu */}
+                    {/* Jobb */}
                     <div className="flex items-center gap-2">
                         <a
                             href="#contact"
@@ -65,7 +65,7 @@ export default function Banner({ }) {
                             {t('contact')}
                         </a>
 
-                        {/* Desktop Language Dropdown */}
+                        {/* Nyelv */}
                         <div className="relative" ref={desktopLangRef}>
                             <button onClick={() => setOpen(!open)} className="cursor-pointer bg-[var(--dark-blue)] text-[var(--light-blue)] px-2 py-2 rounded-[var(--border-radius-16)] shadow-custom-box flex items-center justify-center gap-1 min-w-[80px] group transition-all duration-500 ease-in-out hover:bg-[var(--dark-blue-60)] hover:[box-shadow:inset_0_4px_5px_5px_rgb(0,0,0,0.25)]">
                                 {t('lang')}
@@ -113,7 +113,7 @@ export default function Banner({ }) {
                 </nav>
             </USALProvider>
 
-            {/* Mobile fullscreen menu */}
+            {/* Mobile teljesképernyő */}
             {isMenuOpen && (
                 <div className="absolute inset-0 z-40 flex items-center justify-center transition-opacity duration-300 opacity-100">
                     <div className="bg-[var(--dark-blue)] w-full h-full flex flex-col items-center justify-center space-y-6 overflow-y-auto transition-transform duration-300 animate-in fade-in slide-in-from-top">
@@ -126,7 +126,7 @@ export default function Banner({ }) {
                 </div>
             )}
 
-            {/* Hero Content */}
+            {/* Hero */}
             <USALProvider>
                 <div className="hidden md:grid grid-cols-[50%_50%] flex-1 relative">
                     <div className="flex flex-col items-left justify-center pl-8 xl:pl-12 ">
@@ -165,7 +165,6 @@ export default function Banner({ }) {
                         className="absolute bottom-[-20%] right-[-20%] w-[120%] h-[120%] bg-no-repeat bg-contain bg-right-bottom" data-usal="slide-l-100 duration-1500 once delay-500 threshold-0"
                         style={{ backgroundImage: "url('/img/cup1.webp')" }}
                     />
-                    {/* Button */}
                     <a
                         href="#contact"
                         className="

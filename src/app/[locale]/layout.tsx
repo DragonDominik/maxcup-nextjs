@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale, createTranslator } from "next-intl";
 import { ReactNode } from "react";
 import { routing } from "@/i18n/routing";
-import { usePathname } from "next/navigation"; // works client-side
 
 type Props = {
   children: ReactNode;
@@ -59,7 +58,10 @@ export default async function LocaleLayout({ children, params }: Props) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://yourdomain.com/img/maxcup.png" />
       </head>
-      <body>
+      <body suppressHydrationWarning>
+        <h1 className="sr-only">
+          {t("PAGE.headline")}
+        </h1>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>

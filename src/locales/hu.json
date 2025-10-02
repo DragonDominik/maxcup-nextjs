@@ -1,7 +1,8 @@
 {
     "PAGE": {
         "title": "Max Cup | Egyedi Re-Pohár – Gyártás, Bérlés & Mosás",
-        "description": "Re-pohár minden eseményre. Egyedi Re-pohár gyártás vagy bérlés és mosás, olvass tovább és kérj személyre szabott ajánlatát."
+        "description": "Re-pohár minden eseményre. Egyedi Re-pohár gyártás vagy bérlés és mosás, olvass tovább és kérj személyre szabott ajánlatát.",
+        "headline": "Re-Pohár Bérlés, Mosás és Gyártás Rendezvényekhez – Max Cup"
     },
     "BANNER": {
         "cups": "Poharaink",
@@ -29,5 +30,24 @@
         "renting_description": "Bérelj Re-Poharakat rendezvényedre, praktikus, környezetbarát és pénztárcakímélő megoldás!",
         "washing_description": "A Re-Poharakat akár ezerszer használhatod, és minden mosásuk 100% zöld energiával történik.",
         "logistics_description": "Saját teherautóflottánkkal és raktárainkkal egyszerűvé tesszük a Re-Poharak szállítását és tárolását."
+    },
+    "OFFER": {
+        "offer": "Ajánlatkérés"
+    },
+    "PRODUCTION": {
+        "title": "Re-Cup gyártás",
+        "description": "Adj egyedi stílust minden alkalomnak környezetbarát Re-Poharakkal!\n\nLegyen szó fesztiválról, koncertről, kávézóról, étteremről vagy privát eseményről, a Re‑Poharak nemcsak az italok ideális hordozói, hanem maradandó élményt és stílust biztosítanak vendégeidnek vagy ügyfeleidnek.\n\nSzemélyre szabott IML vagy szitanyomott poharakat kínálunk a hagyományos poharaktól a boros, pezsgős vagy koktélos poharakig. Hozz létre egyedi arculatot, és emeld ki megjelenésed a fenntartható, stílusos Re-Poharakkal!"
+    },
+    "RENTING": {
+        "title": "Re-Cup bérlés",
+        "description": "A bérelt, többször felhasználható Re-Poharak nemcsak pénzt takarítanak meg számodra, hanem csökkentik a környezeti  lábnyomodat is. Így pénzt takaríthatsz, meg ugyanis nincs szükség új  poharak gyártására, mivel a már meglévő Re-Poharak többször is felhasználhatóak.\n\nKollégáink segítenek, hogy miként szervezd rendezvényeidet okosan és zölden, a bérelt, többször felhasználható Re-Poharakkal, sőt a szállítással és a tárolással sem neked kell foglalkoznod!  "
+    },
+    "WASHING": {
+        "title": "Re-Cup mosás",
+        "description": "Minden poharunk számtalan mosási ciklust bír, így többször is használható, ez lehetővé teszi, hogy mindennapi használat során csökkentsük az egyszer használatos poharak okozta hulladék mennyiségét.\n\nAz üzemünk működésében kiemelt szerepet kap a fenntarthatóság. Teljesen megújuló energiaforrásokra támaszkodunk, többek között napelemekre és tisztított kútvízre. Így nemcsak az ökológiai lábnyomunkat csökkentjük, hanem minimalizáljuk a tisztítás költségeit, miközben mindig garantáljuk ügyfeleink számára a higiénikusan tiszta és prémium minőségű poharakat."
+    },
+    "LOGISTICS": {
+        "title": "Logisztika",
+        "description": "Cégcsoportunk saját teherautó flottával és raktárral rendelkezik, így a néhány darabtól a több mint 150.000 darab Re-Pohár szállítását is tudjuk biztosítani, természetesen  országhatárainkon túl is. Akár egyszeri, akár folyamatos szállításra vagy tárolásra van  szükséged, mi rugalmasan megoldjuk és igény esetén biztosítunk minden  szabványnak megfelelő élelmiszerbiztonsági tárolóládákat és a tárolásra  optimalizált raktárat is a Re-Poharaid számára."
     }
 }
