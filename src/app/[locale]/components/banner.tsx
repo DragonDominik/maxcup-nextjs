@@ -32,7 +32,7 @@ export default function Banner({ }) {
     return (
         <div
             id="banner"
-            className="flex flex-col relative w-screen h-screen bg-cover bg-center m-0 p-0 max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw]"
+            className="flex flex-col relative w-[100%] overflow-hidden h-screen bg-cover bg-center m-0 p-0 max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw]"
             style={{ backgroundImage: `url('/img/bg.webp')` }}
         >
             {/* Fehér kapszula */}

@@ -1,7 +1,7 @@
 {
     "PAGE": {
         "title": "Max Cup | Egyedi Re-Pohár – Gyártás, Bérlés & Mosás",
-        "description": "Re-pohár minden eseményre. Egyedi Re-pohár gyártás vagy bérlés és mosás, olvass tovább és kérj személyre szabott ajánlatát.",
+        "description": "Egyedi Re-pohár gyártás vagy bérlés és mosás, olvass tovább és kérj személyre szabott ajánlatot. Max Cup Re-pohár minden eseményre.",
         "headline": "Re-Pohár Bérlés, Mosás és Gyártás Rendezvényekhez – Max Cup"
     },
     "BANNER": {
@@ -49,5 +49,29 @@
     "LOGISTICS": {
         "title": "Logisztika",
         "description": "Cégcsoportunk saját teherautó flottával és raktárral rendelkezik, így a néhány darabtól a több mint 150.000 darab Re-Pohár szállítását is tudjuk biztosítani, természetesen  országhatárainkon túl is. Akár egyszeri, akár folyamatos szállításra vagy tárolásra van  szükséged, mi rugalmasan megoldjuk és igény esetén biztosítunk minden  szabványnak megfelelő élelmiszerbiztonsági tárolóládákat és a tárolásra  optimalizált raktárat is a Re-Poharaid számára."
+    },
+    "CONTACT": {
+        "title": "Kapcsolat",
+        "description": "Lépj kapcsolatba velünk, és kérj egyedi ajánlatot!",
+        "sales": "Elérhetőség",
+        "send": "Küldés",
+        "name": "Név",
+        "company": "Cégnév",
+        "email": "Email",
+        "phone": "Telefonszám",
+        "message": "Üzenet",
+        "consales": "Gyártás, értékesítés",
+        "confactory": "Bérlés, mosás, üzem",
+        "other": "Egyéb",
+        "reason": "Kapcsolatfelvétel oka",
+        "sending": "Küldés...",
+        "sent": "Elküldve",
+        "error": "Hiba",
+        "follow": "Kövess minket"
+    },
+    "FOOTER": {
+        "maxcup": "Max Cup | Minden jog fenntarva.",
+        "contact": "Elérhetőség",
+        "address": "Cím"
     }
 }

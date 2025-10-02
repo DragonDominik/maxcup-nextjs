@@ -1,7 +1,7 @@
 {
     "PAGE": {
         "title": "Max Cup | Re-Cups – Production, Renting & Washing",
-        "description": "Get re-cups for every event. Rent, wash, and use reusable cups. Custom production available and request your personalized eco-friendly offer.",
+        "description": "Custom Re-cup production, renting and washing – read on and get a personalized offer. Max Cup Re-cups for every event.",
         "headline": "Reusable Cups Rental, Washing & Production for Events – Max Cup"
     },
     "BANNER": {
@@ -49,5 +49,29 @@
     "LOGISTICS": {
         "title": "Logistics",
         "description": "Our corporate group has its own truck fleet and warehouse, enabling us to deliver anywhere from just a few units to over 150,000 Re-Cups, naturally even beyond national borders. Whether you need a one-time shipment or continuous delivery and storage, we handle it flexibly and, if required, provide food-safe storage crates that meet all standards, along with a warehouse optimized for storing your Re-Cups."
+    },
+    "CONTACT": {
+        "title": "Contact Us",
+        "description": "Get in touch with us and get your personalized offer!",
+        "sales": "Contact",
+        "send": "Send",
+        "name": "Name",
+        "company": "Company name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "consales": "Production, Sales",
+        "confactory": "Renting, washing, factory",
+        "other": "Other",
+        "reason": "Reason for contact",
+        "sending": "Sending...",
+        "sent": "Sent",
+        "error": "Error",
+        "follow": "Follow Us"
+    },
+    "FOOTER": {
+        "maxcup": "Max Cup | All Rights Reserved.",
+        "contact": "Contact",
+        "address": "Address"
     }
 }

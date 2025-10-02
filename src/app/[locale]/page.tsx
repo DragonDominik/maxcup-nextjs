@@ -6,19 +6,23 @@ import Production from './components/production'
 import Renting from './components/renting'
 import Washing from './components/washing'
 import Logistics from './components/logistics'
+import Contact from './components/contact'
+import Footer from './components/footer'
 import "@/style/main.css";
 
 export default function Page() {
 
   return (
-    <div id="page" className="relative z-0 top-0 left-0 w-full h-fit bg-[var(--light-blue)] max-w-[100vw] overflow-hidden">
-      <Banner/>
-      <WhyUs/>
-      <Services/>
-      <Production/>
-      <Renting/>
-      <Washing/>
-      <Logistics/>
+    <div id="page" className="m-0 p-0 w-full h-fit bg-[var(--light-blue)] max-w-[100vw]">
+      <Banner />
+      <WhyUs />
+      <Services />
+      <Production />
+      <Renting />
+      <Washing />
+      <Logistics />
+      <Contact />
+      <Footer/>
     </div>
   );
 }
