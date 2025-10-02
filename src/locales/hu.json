@@ -4,11 +4,30 @@
         "description": "Re-pohár minden eseményre. Egyedi Re-pohár gyártás vagy bérlés és mosás, olvass tovább és kérj személyre szabott ajánlatát."
     },
     "BANNER": {
-        "title": "Hello"
+        "cups": "Poharaink",
+        "production": "Gyártás",
+        "renting": "Bérlés",
+        "washing": "Mosás",
+        "logistics": "Logisztika",
+        "contact": "Kapcsolat",
+        "clean": "Tiszta energia, tiszta poharak, tisztább jövő!",
+        "offer": "Ajánlatkérés",
+        "lang": "HU"
     },
-    "LocaleSwitcher": {
-        "en": "English",
-        "hu": "Hungarian",
-        "switchLocale": "Switch Lang"
+    "WHYUS": {
+        "title": "Miért a Max Cup?",
+        "paragraph": "Közel <strong>30 éves értékesítési</strong> és több mint <strong>7 éves Re-Pohár</strong> szolgáltatási tapasztalattal rendelkező csapatunkkal szolgáljuk ki szinte minden területről érkező megrendelőinket.\n\nMegrendelői igénytől függően egyedi rendszerünk lehetővé teszi a <strong>token mentes Re-pohár visszaváltást</strong>, ezzel segítve a felhasználói élményt!\n\nLegyen szó a Re-pohár bérlésről, Re-pohár mosásról, Re-pohár tárolásról vagy egyedi Re-pohár gyártásról, mindenben készséggel állunk partnereink rendelkezésére!"
+    },
+    "SERVICES": {
+        "title": "Szolgálatásaink",
+        "readmore": "Olvass tovább",
+        "production": "Gyártás",
+        "renting": "Bérlés",
+        "washing": "Mosás",
+        "logistics": "Logisztika",
+        "production_description": "Tervezd meg rendezvényed arculatát egyedi stílusban és környezetbarát módon a Re-Poharakkal!",
+        "renting_description": "Bérelj Re-Poharakat rendezvényedre, praktikus, környezetbarát és pénztárcakímélő megoldás!",
+        "washing_description": "A Re-Poharakat akár ezerszer használhatod, és minden mosásuk 100% zöld energiával történik.",
+        "logistics_description": "Saját teherautóflottánkkal és raktárainkkal egyszerűvé tesszük a Re-Poharak szállítását és tárolását."
     }
 }

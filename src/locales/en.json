@@ -4,11 +4,30 @@
         "description": "Get re-cups for every event. Rent, wash, and use reusable cups. Custom production available and request your personalized eco-friendly offer."
     },
     "BANNER": {
-        "title": "Hello"
+        "cups": "Cups",
+        "production": "Production",
+        "renting": "Renting",
+        "washing": "Washing",
+        "logistics": "Logistics",
+        "contact": "Contact",
+        "clean": "Clean energy, clean cups, cleaner future!",
+        "offer": "Get Offer",
+        "lang": "EN"
     },
-    "LocaleSwitcher": {
-        "en": "English",
-        "hu": "Hungarian",
-        "switchLocale": "Switch Lang"
+    "WHYUS": {
+        "title": "Why Max Cup?",
+        "paragraph": "With our team, which has nearly <strong>30 years of sales</strong> experience and more than <strong>7 years of Re-Cup</strong> service experience, we serve our clients coming from almost every sector.\n\nDepending on the client's needs, our unique system allows <strong>token-free Re-Cup returns</strong>, enhancing the user experience!\n\nWhether it’s Re-Cup renting, Re-Cup washing, Re-Cup storage, or custom Re-Cup manufacturing, we are always ready to assist our partners in every way!"
+    },
+    "SERVICES": {
+        "title": "Our Services",
+        "readmore": "Read more",
+         "production": "Production",
+        "renting": "Renting",
+        "washing": "Washing",
+        "logistics": "Logistics",
+        "production_description": "Design your event’s look in a unique style and eco-friendly way with Re-Cups!",
+        "renting_description": "Rent Re-Cups for your event, they are an eco-friendly, and budget-friendly option!",
+        "washing_description": "Re-Cups can be used hundreds of times, and every wash is powered by 100% green energy.",
+        "logistics_description": "With our own fleet of trucks and warehouses, we make transporting and storing Re-Cups simple."
     }
 }
