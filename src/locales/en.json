@@ -19,6 +19,10 @@
         "title": "Why Max Cup?",
         "paragraph": "With our team, which has nearly <strong>30 years of sales</strong> experience and more than <strong>7 years of Re-Cup</strong> service experience, we serve our clients coming from almost every sector.\n\nDepending on the client's needs, our unique system allows <strong>token-free Re-Cup returns</strong>, enhancing the user experience!\n\nWhether it’s Re-Cup renting, Re-Cup washing, Re-Cup storage, or custom Re-Cup manufacturing, we are always ready to assist our partners in every way!"
     },
+    "CUPS": {
+        "title": "Our cups",
+        "description": "Our custom-made Re-Cups offer an alternative to traditional single-use plastic cups. We designed our Re-Cups to be reusable and durable, helping to reduce their ecological footprint. The Re-Cups available for rental are crafted with designs intended to appeal to a wide range of ages."
+    },
     "SERVICES": {
         "title": "Our Services",
         "readmore": "Read more",
@@ -73,5 +77,19 @@
         "maxcup": "Max Cup | All Rights Reserved.",
         "contact": "Contact",
         "address": "Address"
+    },
+    "SCHEMA": {
+        "description": "Custom Re-Cup production, renting, washing, and logistics for events. Sustainable and eco-friendly solutions for every occasion.",
+        "slogan": "Clean energy, clean cups, cleaner future!",
+        "keywords": "re-cup, re-cup production, cup rental, eco-friendly cups, sustainable events",
+        "services": "Our Services",
+        "production_title": "Re-Cup Production",
+        "production_description": "Custom Re-Cup manufacturing with IML and screen printing for festivals, concerts, restaurants, and private events.",
+        "renting_title": "Re-Cup Renting",
+        "renting_description": "Reusable Re-Cups for rent at events, including delivery and storage.",
+        "washing_title": "Re-Cup Washing",
+        "washing_description": "Hygienic washing service powered by 100% renewable energy in our eco-friendly facility.",
+        "logistics_title": "Logistics",
+        "logistics_description": "Transportation and storage of Re-Cups with our own truck fleet and warehouse, up to 150,000 units."
     }
 }

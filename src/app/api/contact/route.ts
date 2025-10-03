@@ -2,22 +2,22 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
-    try {
-        const { title, message, phone, reply_to, sender_name, company } = await req.json();
+  try {
+    const { title, message, phone, reply_to, sender_name, company } = await req.json();
 
-        if (!reply_to || !sender_name) {
-            return NextResponse.json({ message: "Email and name are required" }, { status: 400 });
-        }
+    if (!reply_to || !sender_name) {
+      return NextResponse.json({ message: "Email and name are required" }, { status: 400 });
+    }
 
-        const transporter = nodemailer.createTransport({
-            service: "gmail",
-            auth: {
-                user: process.env.GMAIL_USER,
-                pass: process.env.GMAIL_PASS,
-            },
-        });
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASS,
+      },
+    });
 
-        const htmlBody = `
+    const htmlBody = `
       <div style="background-color:#fff;padding:30px;font-family:Arial,sans-serif;">
         <div style="max-width:600px;margin:0 auto;background-color:rgba(229,247,247,1);border-radius:12px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.1);">
           
@@ -46,7 +46,8 @@ export async function POST(req: NextRequest) {
             <hr style="margin:20px 0;border:none;border-top:1px solid #ccc;">
 
             <p><strong>Message:</strong></p>
-            <p style="margin-left:15px;">${message.replace(/\n/g, "<br>")}</p>
+         <p dangerouslySetInnerHTML={{ __html: message.replace(/\n/g, "<br>") }} />
+
           </div>
 
           <!-- Footer -->
@@ -58,18 +59,18 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
-        await transporter.sendMail({
-            from: `"${sender_name}" <${process.env.GMAIL_USER}>`, 
-            to: process.env.EMAIL_TO,
-            subject: title || `New contact form submission from ${sender_name}`,
-            text: `${message}\nPhone: ${phone}\nEmail: ${reply_to}\nCompany: ${company || "N/A"}`,
-            html: htmlBody,
-            replyTo: reply_to,
-        });
+    await transporter.sendMail({
+      from: `"${sender_name}" <${process.env.GMAIL_USER}>`,
+      to: process.env.EMAIL_TO,
+      subject: title || `New contact form submission from ${sender_name}`,
+      text: `${message}\nPhone: ${phone}\nEmail: ${reply_to}\nCompany: ${company || "N/A"}`,
+      html: htmlBody,
+      replyTo: reply_to,
+    });
 
-        return NextResponse.json({ message: "Email sent!" });
-    } catch (err: any) {
-        console.error(err);
-        return NextResponse.json({ message: err.message || "Error sending email" }, { status: 500 });
-    }
+    return NextResponse.json({ message: "Email sent!" });
+  } catch (err: any) {
+    console.error(err);
+    return NextResponse.json({ message: err.message || "Error sending email" }, { status: 500 });
+  }
 }

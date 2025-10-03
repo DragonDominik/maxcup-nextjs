@@ -19,6 +19,10 @@
         "title": "Miért a Max Cup?",
         "paragraph": "Közel <strong>30 éves értékesítési</strong> és több mint <strong>7 éves Re-Pohár</strong> szolgáltatási tapasztalattal rendelkező csapatunkkal szolgáljuk ki szinte minden területről érkező megrendelőinket.\n\nMegrendelői igénytől függően egyedi rendszerünk lehetővé teszi a <strong>token mentes Re-pohár visszaváltást</strong>, ezzel segítve a felhasználói élményt!\n\nLegyen szó a Re-pohár bérlésről, Re-pohár mosásról, Re-pohár tárolásról vagy egyedi Re-pohár gyártásról, mindenben készséggel állunk partnereink rendelkezésére!"
     },
+    "CUPS": {
+        "title": "Poharaink",
+        "description": "Egyedileg gyártott Re-Poharaink alternatívát kínálnak a hagyományos egyszer használatos műanyag poharakkal szemben. Re-Poharainkat úgy terveztük, hogy többször is fel lehessen őket használni, hosszú  élettartammal rendelkeznek, ezzel csökkentve az általuk hagyott  ökológiai lábnyomot. A bérelhető Re-Poharainkat igyekszünk olyan design-al gyártani, hogy széleskörűen minden korosztály számára tetszetős legyen."
+    },
     "SERVICES": {
         "title": "Szolgálatásaink",
         "readmore": "Olvass tovább",
@@ -73,5 +77,19 @@
         "maxcup": "Max Cup | Minden jog fenntarva.",
         "contact": "Elérhetőség",
         "address": "Cím"
+    },
+    "SCHEMA": {
+        "description": "Egyedi Re-pohár gyártás, bérlés, mosás és logisztika rendezvényekhez. Fenntartható, környezetbarát megoldások minden eseményre.",
+        "slogan": "Tiszta energia, tiszta poharak, tisztább jövő!",
+        "keywords": "re-pohár, repohár gyártás, pohár bérlés, környezetbarát poharak, fenntartható rendezvény",
+        "services": "Szolgáltatásaink",
+        "production_title": "Re-Pohár Gyártás",
+        "production_description": "Egyedi Re-Poharak gyártása IML és szitanyomással, fesztiválokra, koncertekre, éttermekbe és privát eseményekre.",
+        "renting_title": "Re-Pohár Bérlés",
+        "renting_description": "Többször használható Re-Poharak bérlése rendezvényekre, szállítással és tárolással együtt.",
+        "washing_title": "Re-Pohár Mosás",
+        "washing_description": "Higiénikus mosási szolgáltatás 100% megújuló energiával, környezetbarát üzemünkben.",
+        "logistics_title": "Logisztika",
+        "logistics_description": "Saját teherautóflottával és raktárral Re-Poharak szállítása és tárolása akár 150.000 darabig."
     }
 }

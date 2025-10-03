@@ -1,6 +1,7 @@
-import { useLocale, useTranslations } from 'next-intl';
 import Banner from './components/banner'
+import ScrollTopBtn from "./components/scrollTopBtn";
 import WhyUs from './components/whyus'
+import Cups from './components/cups'
 import Services from './components/services'
 import Production from './components/production'
 import Renting from './components/renting'
@@ -12,10 +13,13 @@ import "@/style/main.css";
 
 export default function Page() {
 
+  
+
   return (
     <div id="page" className="m-0 p-0 w-full h-fit bg-[var(--light-blue)] max-w-[100vw]">
       <Banner />
-      <WhyUs />
+      <ScrollTopBtn/>
+      <Cups/>
       <Services />
       <Production />
       <Renting />
