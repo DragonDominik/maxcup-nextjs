@@ -9,7 +9,7 @@ export default function Logistics() {
     return (
         <>
             <USALProvider>
-                <div id="logistics" className="flex justify-center items-center relative w-full min-h-[100vh] 2xl:min-h-[60vw] h-fit max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw] m-0 p-0 mt-20 lg:mt-0">
+                <div id="logistics" className="flex justify-center items-center relative w-full min-h-[100vh] 2xl:min-h-[60vw] h-fit max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw] m-0 p-0 mt-20 lg:mt-0 overflow-hidden">
                     <div className="w-[90%] lg:w-[85%]">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 mx-auto">
                             {/* 1 */}

@@ -8,22 +8,22 @@ type ContactButtonProps = {
 export default function ContactButton({ direction = 'right' }: ContactButtonProps) {
   const t = useTranslations('OFFER');
 
+  // Only apply fade classes on md+ screens
   const fadeClass = direction === 'left' ? 'fade-l' : 'fade-r';
 
   return (
     <button
-      className={`mt-2 shadow-custom-box group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-[var(--border-radius-16)] bg-[var(--dark-blue)] text-[var(--light-blue)] duration-500 cursor-pointer`}
-      style={{ width: '100%' }}
-      onClick={() => (window.location.href = '#offer')}
-      data-usal={`${fadeClass} threshold-100 delay-100 duration-800`}
+      className={`mt-2 shadow-custom-box group relative inline-flex h-12 w-full items-center justify-center rounded-[var(--border-radius-16)] bg-[var(--dark-blue)] text-[var(--light-blue)] cursor-pointer`}
+      onClick={() => (window.location.href = '#contact')}
+      data-usal={`${fadeClass} threshold-30 delay-100 duration-800`}
     >
-      {/* Felirat */}
-      <div className="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0">
+      {/* Default Text (always visible on mobile) */}
+      <div className="transition translate-y-0 opacity-100 md:group-hover:-translate-y-[100%] md:group-hover:opacity-0">
         {t("offer")}
       </div>
 
-      {/* Hover */}
-      <div className="absolute translate-y-[150%] opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
+      {/* Hover Icon */}
+      <div className="absolute transition translate-y-[100%] opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100">
         <svg
           width="15"
           height="15"

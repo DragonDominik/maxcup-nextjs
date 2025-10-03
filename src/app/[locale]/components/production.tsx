@@ -9,7 +9,7 @@ export default function Production() {
     return (
         <>
             <USALProvider>
-                <div id="production" className="flex justify-center items-center relative w-full min-h-[100vh] 2xl:min-h-[60vw] h-fit max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw] m-0 p-0 mt-20 lg:mt-0">
+                <div id="production" className="flex justify-center items-center relative w-full min-h-[100vh] 2xl:min-h-[60vw] h-fit max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw] m-0 p-0 mt-20 lg:mt-0 overflow-hidden">
                     <div className="w-[90%] lg:w-[85%]">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 mx-auto">
                             {/* 1 */}
@@ -21,13 +21,13 @@ export default function Production() {
                                 <span className="w-full h-[var(--border-radius-16)] shadow-custom-box bg-[var(--dark-blue)] rounded-[var(--border-radius-16)]" data-usal="fade-d delay-100 threshold-100"></span>
                             </div>
                             {/* 3 */}
-                            <div className="flex flex-col justify-start p-1 order-4 lg:order-3 items-center 2xl:items-start">
+                            <div className="flex flex-col justify-start h-fit p-1 order-4 lg:order-3 items-center 2xl:items-start">
                                 <div className="inline-block">
                                     <img
                                         src="/img/maxcup-repohar-gyartas.webp" alt={t("title")}
                                         className="rounded-[var(--border-radius-50)] border-15 lg:border-15 border-[var(--mid-blue)] shadow-custom-box" data-usal="fade-r threshold-80 delay-100 duration-800"
                                     />
-                                   <ContactButton/>
+                                    <ContactButton direction="right" />
                                 </div>
                             </div>
                             {/* 4 */}

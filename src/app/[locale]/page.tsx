@@ -23,8 +23,8 @@ export default function Page() {
       <Services />
       <Production />
       <Renting />
-      <Washing />
-      <Logistics />
+      <Washing/>
+      <Logistics/>
       <Contact />
       <Footer/>
     </div>

@@ -70,7 +70,7 @@ const Carousel: React.FC = () => {
         {cards.map((card) => (
           <USALProvider key={card.id}>
             <div
-              className="bg-[var(--mid-blue-40)] rounded-[var(--border-radius-24)] shadow-custom-box overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-[55vw] lg:h-[40vw] min-h-none xl:min-h-[500px] xl:h-[30vw] max-h-[1000px] xl:max-h-[800px]"
+              className="bg-[var(--mid-blue)] rounded-[var(--border-radius-24)] shadow-custom-box overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-[55vw] lg:h-[40vw] min-h-none xl:min-h-[500px] xl:h-[30vw] max-h-[1000px] xl:max-h-[800px]"
               data-usal="fade-u delay-100 duration-1000 threshold-60"
             >
               <div className="p-4 flex flex-col flex-grow">
@@ -107,7 +107,7 @@ const Carousel: React.FC = () => {
             >
               {cards.map((card) => (
                 <div key={card.id} className="w-full flex-shrink-0 px-2">
-                  <div className="bg-[var(--mid-blue-40)] rounded-[var(--border-radius-24)] shadow-custom-box flex flex-col h-[130vw] mb-2">
+                  <div className="bg-[var(--mid-blue)] rounded-[var(--border-radius-24)] shadow-custom-box flex flex-col h-[130vw] mb-2">
                     <div className="p-6 flex flex-col flex-grow">
                       <div className="flex justify-center mb-2">
                         <img
@@ -137,7 +137,7 @@ const Carousel: React.FC = () => {
           <button
             onClick={prevSlide}
             disabled={isAnimating}
-            className={`absolute left-2 top-1/2 -translate-y-1/2 bg-[var(--dark-blue)] backdrop-blur-sm rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 z-10 hover:bg-[var(--dark-blue-60)] ${isAnimating ? "opacity-50" : ""
+            className={`border-2 border-[var(--light-blue)] absolute left-2 top-1/2 -translate-y-1/2 bg-[var(--dark-blue-60)] backdrop-blur-sm rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 z-10 hover:bg-[var(--mid-blue-40)] ${isAnimating ? "opacity-50" : ""
               }`}
           >
             <ChevronLeft className="w-5 h-5 text-[var(--light-blue)]" />
@@ -145,7 +145,7 @@ const Carousel: React.FC = () => {
           <button
             onClick={nextSlide}
             disabled={isAnimating}
-            className={`absolute right-2 top-1/2 -translate-y-1/2 bg-[var(--dark-blue)] backdrop-blur-sm rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 z-10 hover:bg-[var(--dark-blue-60)] ${isAnimating ? "opacity-50" : ""
+            className={`border-2 border-[var(--light-blue)] absolute right-2 top-1/2 -translate-y-1/2 bg-[var(--dark-blue-60)] backdrop-blur-sm rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 z-10 hover:bg-[var(--mid-blue-40)] ${isAnimating ? "opacity-50" : ""
               }`}
           >
             <ChevronRight className="w-5 h-5 text-[var(--light-blue)]" />
