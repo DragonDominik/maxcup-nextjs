@@ -95,9 +95,9 @@ export default function Banner({ }) {
                         <div className="relative" ref={mobileLangRef}>
                             <button onClick={() => { setIsMenuOpen(false); setOpen(!open); }} className="cursor-pointer md:bg-[var(--dark-blue-60)] py-1 px-2 mx-2 rounded-md flex items-center justify-center gap-1 text-[var(--light-blue)] ring-2 ring-[var(--light-blue)] ring-opacity-50">{t('lang')}</button>
                             {open && (
-                                <div className="absolute right-0 mt-2 w-auto bg-[var(--light-blue)] rounded-[var(--border-radius-16)] border border-[var(--dark-blue)] overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+                                <div className="absolute right-0 mt-2 w-auto bg-[var(--light-blue)] rounded-[var(--border-radius-16)] border border-[var(--mid-blue)] overflow-hidden animate-in fade-in zoom-in-95 duration-200">
                                     {allowedLangs.map((option) => (
-                                        <a key={option} href={`/${option.toLowerCase()}/`} className="px-4 py-1 flex items-center justify-center font-medium text-gray-700 transition-colors duration-300 ease-in-out hover:bg-[var(--dark-blue)] hover:text-[var(--light-blue)]">
+                                        <a key={option} href={`/${option.toLowerCase()}/`} className="px-4 py-1 flex items-center justify-center font-medium text-gray-700 transition-colors duration-300 ease-in-out hover:bg-[var(--mid-blue)] hover:text-[var(--dark-blue)]">
                                             {option}
                                         </a>
                                     ))}

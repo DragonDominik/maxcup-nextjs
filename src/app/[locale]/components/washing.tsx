@@ -9,7 +9,7 @@ export default function Washing() {
     return (
         <>
             <USALProvider>
-                <div id="washing" className="flex justify-center items-center relative w-full min-h-[100vh] 2xl:min-h-[60vw] h-fit max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw] m-0 p-0 mt-20 lg:mt-0 overflow-hidden">
+                <div id="washing" className="flex justify-center items-center relative w-full min-h-[100vh] 2xl:min-h-[60vw] h-fit max-h-[2000px] md:max-h-[160vw] lg:max-h-[80vw] m-0 p-0 mt-20 lg:mt-0 overflow-hidden">
                     <div className="w-[90%] lg:w-[85%]">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 mx-auto">
                             {/* 1 */}
@@ -32,7 +32,7 @@ export default function Washing() {
                             </div>
                             {/* 4 */}
                             <div className="flex flex-col justify-start p-1 order-3 lg:order-4">
-                                <p className="whitespace-pre-wrap text-justify" data-usal="ease-in-out duration-500 threshold-70">
+                                <p className="whitespace-pre-wrap text-justify" data-usal="ease-in-out duration-500 threshold-30">
                                     {t("description")}
                                 </p>
                             </div>

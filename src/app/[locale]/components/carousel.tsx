@@ -152,13 +152,13 @@ const Carousel: React.FC = () => {
           </button>
 
           {/* Dots indicator */}
-          <div className="flex justify-center mt-4 space-x-2">
+          <div className="flex z-50 justify-center mt-4 space-x-2">
             {cards.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 disabled={isAnimating}
-                className={`w-2 h-2 rounded-full transition-colors duration-200 ${index === currentIndex ? "bg-[var(--dark-blue)]" : "bg-[var(--dark-blue-60)]"
+                className={`w-2 h-2 rounded-full transition-colors duration-200 ${index === currentIndex ? "bg-[var(--mid-blue)]" : "bg-[var(--light-blue)]"
                   }`}
                 aria-label={`${index + 1}. card`}
               />

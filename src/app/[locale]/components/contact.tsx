@@ -8,6 +8,14 @@ export default function Contact() {
 
     return (
         <>
+            <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" className="w-full mt-20 lg:mt-0">
+                <path
+                    d="M0,50 C120,20 240,80 360,50 C480,20 600,80 720,50 C840,20 960,80 1080,50 C1200,20 1320,80 1440,50"
+                    stroke="var(--dark-blue)"
+                    strokeWidth="5"
+                    fill="none"
+                />
+            </svg>
             <USALProvider>
                 <div id="contact" className="flex justify-center items-center relative w-full min-h-[100vh] 2xl:min-h-[60vw] h-fit max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw] m-0 p-0 mt-20 lg:mt-0">
                     <div className="w-[90%] lg:w-[85%]">

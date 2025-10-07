@@ -19,6 +19,7 @@ export default function Page() {
     <div id="page" className="m-0 p-0 w-full h-fit bg-[var(--light-blue)] max-w-[100vw]">
       <Banner />
       <ScrollTopBtn/>
+      <WhyUs/>
       <Cups/>
       <Services />
       <Production />

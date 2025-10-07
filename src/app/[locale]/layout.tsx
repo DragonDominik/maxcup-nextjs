@@ -36,6 +36,34 @@ export default async function LocaleLayout({ children, params }: Props) {
     "slogan": t("SCHEMA.slogan"),
     "keywords": t("SCHEMA.keywords"),
     "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "07:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "00:00",
+        "closes": "00:00",
+        "description": "Closed"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "00:00",
+        "closes": "00:00",
+        "description": "Closed"
+      }
+    ],
     "hasMap": "https://maps.google.com/?q=Erdőalja+u.+3,+Mogyoród,+2146",
     "geo": {
       "@type": "GeoCoordinates",

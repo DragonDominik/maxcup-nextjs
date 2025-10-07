@@ -13,7 +13,7 @@ export default function WhyUs() {
                     <div className="grid grid-cols-1 gap-1 lg:grid-cols-2 w-[90%] lg:w-[85%]">
                         <div className="order-1 lg:order-1">
                             <h2 className="lg-text sintony font-bold" data-usal="ease-in-out duration-500 threshold-100">{t("title")}</h2>
-                            <p className="whitespace-pre-wrap text-justify" data-usal="ease-in-out duration-500 threshold-70">
+                            <p className="whitespace-pre-wrap text-justify" data-usal="ease-in-out duration-500 threshold-30">
                                 {t.rich("paragraph", {
                                     strong: (children: React.ReactNode) => (
                                         <strong className="text-dark-blue">{children}</strong>

@@ -7,14 +7,12 @@
   --mid-blue-40: rgba(75, 215, 222, 0.4);
   --dark-blue: rgba(0, 94, 107);
   --dark-blue-60: rgba(0, 94, 107, 0.6);
-  --border-radius-16: calc(16px + 0.5vw);
-  ;
-  --border-radius-24: calc(24px + 0.5vw);
-  ;
-  --border-radius-50: calc(50px + 0.5vw);
-  ;
+  --very-dark-blue: #00414a;
+  --black: #0e1111;
 
-  --lg-text-heigth: calc(calc(12px + 1vw) *2.5 * 1.6);
+  --border-radius-16: calc(16px + 0.5vw);
+  --border-radius-24: calc(24px + 0.5vw);
+  --border-radius-50: calc(50px + 0.5vw);
 }
 
 ::selection {
@@ -43,6 +41,7 @@
 html {
   font-family: 'Poppins', sans-serif;
   font-size: calc(12px + 1vw);
+  color: var(--black);
   scroll-behavior: smooth;
   overscroll-behavior: contain;
   overscroll-behavior-y: none;

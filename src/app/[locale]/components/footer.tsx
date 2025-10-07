@@ -8,8 +8,11 @@ export default function Footer() {
 
     return (
         <>
+            <svg viewBox="0 0 1440 160" xmlns="http://www.w3.org/2000/svg">
+                <path fill="var(--dark-blue)" fillOpacity="1" d="M0,64L48,69.3C96,74.5,192,85.5,288,85.3C384,85.5,480,74.5,576,80C672,85.5,768,106.5,864,106.7C960,106.5,1056,85.5,1152,74.7C1248,64,1344,64,1392,64L1440,64L1440,160L1392,160C1344,160,1248,160,1152,160C1056,160,960,160,864,160C768,160,672,160,576,160C480,160,384,160,288,160C192,160,96,160,48,160L0,160Z" />
+            </svg>
             <USALProvider>
-                <footer className="bg-[var(--dark-blue)] w-full h-auto mt-30 md:mt-10" data-usal="fade-u threshold-10 duration-800">
+                <footer className="bg-[var(--dark-blue)] w-full h-auto -mt-1">
                     <div className="flex flex-col h-full">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 w-full flex-1" data-usal="fade-u delay-300 threshold-10 duration-800">
                             {/* Logo */}
@@ -70,8 +73,13 @@ export default function Footer() {
                                 </a>
                             </div>
                         </div>
-                        <div className="w-full bg-black/30 flex items-center justify-center p-2 text-[var(--light-blue)] sintony text-center xs-text" data-usal="fade-u delay-500 threshold-10 duration-800">
-                            {t("maxcup")}
+                        <div className='w-full'>
+                            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" className="w-full">
+                                <path fill="var(--very-dark-blue)" d="M0,30L48,40C96,50,192,20,288,30C384,40,480,55,576,35C672,15,768,45,864,35C960,25,1056,10,1152,25C1248,40,1344,50,1392,45L1440,40L1440,60L0,60Z" />
+                            </svg>
+                            <div className="-mt-1 w-full bg-[var(--very-dark-blue)] flex items-center justify-center p-6 lg:p-2 text-[var(--light-blue)] sintony text-center xs-text">
+                                <div>{t("maxcup")}</div>
+                            </div>
                         </div>
                     </div>
                 </footer>
