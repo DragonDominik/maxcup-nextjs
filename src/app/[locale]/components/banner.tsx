@@ -130,10 +130,10 @@ export default function Banner({ }) {
             <USALProvider>
                 <div className="hidden md:grid grid-cols-[50%_50%] flex-1 relative">
                     <div className="flex flex-col items-left justify-center pl-8 xl:pl-12 ">
-                        <div className="hidden lg:block sintony xl-text text-[var(--light-blue)] shadow-custom-text font-bold -mx-1.5 -my-2 lg:-my-6" data-usal="fade-d duration-1500 delay-200" >
+                        <div className="hidden lg:block sintony xl-text text-[var(--light-blue)] shadow-custom-text font-bold -mx-1.5 -my-2 lg:-my-6" data-usal="once fade-d duration-1500 delay-200" >
                             MAX CUP
                         </div>
-                        <div className="text-[var(--light-blue)] shadow-custom-text xl-text-between-md-lg" data-usal="fade-u split-word split-delay-100 duration-1500 delay-200">
+                        <div className="text-[var(--light-blue)] shadow-custom-text xl-text-between-md-lg" data-usal="once fade-u split-word split-delay-100 duration-1500 delay-200">
                             {t('clean')}
                         </div>
                         <a
@@ -145,12 +145,12 @@ export default function Banner({ }) {
                     after:opacity-0 after:transition-all after:duration-500
                     hover:after:opacity-100 hover:after:right-6 shadow-custom-box cursor-pointer
                   "
-                            data-usal="fade-u duration-1500 delay-1500"
+                            data-usal="once fade-u duration-1500 delay-1500"
                         >
                             {t('offer')}
                         </a>
                     </div>
-                    <div className="flex justify-center items-center" data-usal="slide-l-100 duration-1500 once delay-1000 threshold-0">
+                    <div className="flex justify-center items-center" data-usal="once slide-l-100 duration-1500 once delay-1000 threshold-0">
                         <img
                             src="/img/cup1.webp"
                             alt="Cup"
@@ -162,7 +162,7 @@ export default function Banner({ }) {
             <USALProvider>
                 <div className="md:hidden absolute left-0 right-0 bottom-0 z-30 w-full overflow-hidden flex flex-1 h-full flex-col justify-end items-center">
                     <div
-                        className="absolute bottom-[-20%] right-[-20%] w-[120%] h-[120%] bg-no-repeat bg-contain bg-right-bottom" data-usal="slide-l-100 duration-1500 once delay-500 threshold-0"
+                        className="absolute bottom-[-20%] right-[-20%] w-[120%] h-[120%] bg-no-repeat bg-contain bg-right-bottom" data-usal="once slide-l-100 duration-1500 once delay-500 threshold-0"
                         style={{ backgroundImage: "url('/img/cup1.webp')" }}
                     />
                     <a

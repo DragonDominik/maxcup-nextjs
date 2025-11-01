@@ -71,7 +71,7 @@ const Carousel: React.FC = () => {
           <USALProvider key={card.id}>
             <div
               className="bg-[var(--mid-blue)] rounded-[var(--border-radius-24)] shadow-custom-box overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-[55vw] lg:h-[40vw] min-h-none xl:min-h-[500px] xl:h-[30vw] max-h-[1000px] xl:max-h-[800px]"
-              data-usal="fade-u delay-100 duration-1000 threshold-60"
+              data-usal="once fade-u delay-100 duration-1000 threshold-60"
             >
               <div className="p-4 flex flex-col flex-grow">
                 <div className="flex justify-center mb-2">
@@ -99,7 +99,7 @@ const Carousel: React.FC = () => {
 
       {/* Mobil */}
       <USALProvider>
-        <div className="md:hidden relative" data-usal="fade-u delay-100 duration-1000 threshold-60">
+        <div className="md:hidden relative" data-usal="once fade-u delay-100 duration-1000 threshold-60">
           <div className="overflow-hidden rounded-lg px-4">
             <div
               className="flex transition-transform duration-500 ease-in-out"

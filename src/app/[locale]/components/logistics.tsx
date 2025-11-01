@@ -14,24 +14,24 @@ export default function Logistics() {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 mx-auto">
                             {/* 1 */}
                             <div className="flex flex-col justify-center p-1 order-1 lg:order-2">
-                                <h3 className="lg-text sintony font-bold" data-usal="fade-d delay-100 threshold-100">{t("title")}</h3>
+                                <h3 className="lg-text sintony font-bold" data-usal="once fade-d delay-100 threshold-100">{t("title")}</h3>
                             </div>
                             {/* 2 */}
                             <div className="flex flex-col justify-center order-2 lg:order-1">
-                                <span className="w-full h-[var(--border-radius-16)] shadow-custom-box bg-[var(--dark-blue)] rounded-[var(--border-radius-16)]" data-usal="fade-d delay-100 threshold-100"></span>
+                                <span className="w-full h-[var(--border-radius-16)] shadow-custom-box bg-[var(--dark-blue)] rounded-[var(--border-radius-16)]" data-usal="once fade-d delay-100 threshold-100"></span>
                             </div>
                             {/* 3 */}
                             <div className="flex flex-col justify-start p-1 order-4 lg:order-4 items-center 2xl:items-start">
                                 <div className="inline-block">
                                     <img
                                         src="/img/maxcup-repohar-raktarozas-szallitas.webp" alt={t("title")}
-                                        className="rounded-[var(--border-radius-50)] border-15 lg:border-15 border-[var(--mid-blue)] shadow-custom-box" data-usal="fade-l threshold-80 delay-100 duration-800"
+                                        className="rounded-[var(--border-radius-50)] border-15 lg:border-15 border-[var(--mid-blue)] shadow-custom-box" data-usal="once fade-l threshold-80 delay-100 duration-800"
                                     />
                                 </div>
                             </div>
                             {/* 4 */}
                             <div className="flex flex-col justify-start p-1 order-3 lg:order-3">
-                                <p className="whitespace-pre-wrap text-justify" data-usal="ease-in-out duration-500 threshold-30">
+                                <p className="whitespace-pre-wrap text-justify" data-usal="once ease-in-out duration-500 threshold-30">
                                     {t("description")}
                                 </p>
                             </div>

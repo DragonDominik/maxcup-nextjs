@@ -8,16 +8,15 @@ type ContactButtonProps = {
 export default function ContactButton({ direction = 'right' }: ContactButtonProps) {
   const t = useTranslations('OFFER');
 
-  // Only apply fade classes on md+ screens
   const fadeClass = direction === 'left' ? 'fade-l' : 'fade-r';
 
   return (
     <button
       className={`mt-2 shadow-custom-box group relative inline-flex h-12 w-full items-center justify-center rounded-[var(--border-radius-16)] bg-[var(--dark-blue)] text-[var(--light-blue)] cursor-pointer`}
       onClick={() => (window.location.href = '#contact')}
-      data-usal={`${fadeClass} threshold-30 delay-100 duration-800`}
+      data-usal={`${fadeClass} threshold-30 delay-100 duration-800 once`}
     >
-      {/* Default Text (always visible on mobile) */}
+      {/* Text*/}
       <div className="transition translate-y-0 opacity-100 md:group-hover:-translate-y-[100%] md:group-hover:opacity-0">
         {t("offer")}
       </div>

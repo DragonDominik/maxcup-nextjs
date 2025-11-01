@@ -12,8 +12,8 @@ export default function WhyUs() {
                 <div className="flex justify-center items-center relative w-[100%] oveflow:hidden min-h-[100vh] 2xl:min-h-[60vw] h-fit max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw] m-0 p-0 mt-20 lg:mt-0">
                     <div className="grid grid-cols-1 gap-1 lg:grid-cols-2 w-[90%] lg:w-[85%]">
                         <div className="order-1 lg:order-1">
-                            <h2 className="lg-text sintony font-bold" data-usal="ease-in-out duration-500 threshold-100">{t("title")}</h2>
-                            <p className="whitespace-pre-wrap text-justify" data-usal="ease-in-out duration-500 threshold-30">
+                            <h2 className="lg-text sintony font-bold" data-usal="once ease-in-out duration-500 threshold-100">{t("title")}</h2>
+                            <p className="whitespace-pre-wrap text-justify" data-usal="once ease-in-out duration-500 threshold-30">
                                 {t.rich("paragraph", {
                                     strong: (children: React.ReactNode) => (
                                         <strong className="text-dark-blue">{children}</strong>
@@ -21,7 +21,7 @@ export default function WhyUs() {
                                 })}
                             </p>
                         </div>
-                        <div className="order-3 lg:order-2 mt-2 lg:mt-0 flex justify-center items-center" data-usal="ease-in-out duration-500 threshold-70">
+                        <div className="order-3 lg:order-2 mt-2 lg:mt-0 flex justify-center items-center" data-usal="once ease-in-out duration-500 threshold-70">
                                 <ClientVideo/>
                         </div>
                     </div>

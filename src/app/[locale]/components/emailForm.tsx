@@ -54,7 +54,7 @@ export default function SendEmailButton() {
                     <input type="hidden" name="subject" value="Title" />
                     <input type="hidden" name="from_name" value="Sender" />
                     {/* First row: Name + Company */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" data-usal="fade-u delay-150 threshold-100">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" data-usal="once fade-u delay-150 threshold-100">
                         {[
                             { id: "name", label: t("name"), must: true },
                             { id: "company", label: t("company"), must: false },
@@ -82,7 +82,7 @@ export default function SendEmailButton() {
                         ))}
                     </div>
                     {/* Second row: Email + Phone */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" data-usal="fade-u delay-150 threshold-100">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" data-usal="once fade-u delay-150 threshold-100">
                         {[
                             { id: "email", label: t("email"), type: "email", must: true },
                             { id: "phone", label: t("phone"), type: "text", must: true },
@@ -111,7 +111,7 @@ export default function SendEmailButton() {
                         ))}
                     </div>
                     {/* Message textarea */}
-                    <div className="relative w-full mt-4" data-usal="fade-u delay-150 threshold-100">
+                    <div className="relative w-full mt-4" data-usal="once fade-u delay-150 threshold-100">
                         <textarea
                             name="message"
                             id="message"
@@ -131,7 +131,7 @@ export default function SendEmailButton() {
                         </label>
                     </div>
                     {/* Type select */}
-                    <div className="relative w-full mt-4" data-usal="fade-u delay-150 threshold-100">
+                    <div className="relative w-full mt-4" data-usal="once fade-u delay-150 threshold-100">
                         <label htmlFor="type" className="block text-[var(--dark-blue)] mb-1 font-medium">
                             {t("reason")} <span className="xs-text">*</span>
                         </label>
@@ -149,7 +149,7 @@ export default function SendEmailButton() {
                     {/* Button with status */}
                     <div className="w-full grid grid-cols-3 items-stretch mt-4">
                         <div className="flex justify-start items-center pr-2">
-                            <span className="h-[var(--border-radius-16)] w-full bg-[var(--dark-blue)] rounded-[var(--border-radius-16)] shadow-custom-box" data-usal="fade-u delay-100 threshold-100"></span>
+                            <span className="h-[var(--border-radius-16)] w-full bg-[var(--dark-blue)] rounded-[var(--border-radius-16)] shadow-custom-box" data-usal="once fade-u delay-100 threshold-100"></span>
                         </div>
                         <div className="flex justify-center items-stretch">
                             <button
@@ -164,7 +164,7 @@ export default function SendEmailButton() {
                                                 ? "bg-red-500 text-[var(--light-blue)]"
                                                 : "bg-[var(--dark-blue)] text-[var(--light-blue)] hover:bg-[var(--mid-blue)] hover:text-[var(--dark-blue)] hover:scale-105 active:scale-95"
                                     }`}
-                                data-usal="fade-u delay-150 threshold-100"
+                                data-usal="once fade-u delay-150 threshold-100"
                             >
                                 {status === "idle" && "Send"}
                                 {status === "sending" && "Sending..."}
@@ -174,7 +174,7 @@ export default function SendEmailButton() {
 
                         </div>
                         <div className="flex justify-start items-center pl-2">
-                            <span className="h-[var(--border-radius-16)] w-full bg-[var(--dark-blue)] rounded-[var(--border-radius-16)] shadow-custom-box" data-usal="fade-u delay-100 threshold-100"></span>
+                            <span className="h-[var(--border-radius-16)] w-full bg-[var(--dark-blue)] rounded-[var(--border-radius-16)] shadow-custom-box" data-usal="once fade-u delay-100 threshold-100"></span>
                         </div>
                     </div>
                 </form>

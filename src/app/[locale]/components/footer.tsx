@@ -14,7 +14,7 @@ export default function Footer() {
             <USALProvider>
                 <footer className="bg-[var(--dark-blue)] w-full h-auto -mt-1">
                     <div className="flex flex-col h-full">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 w-full flex-1" data-usal="fade-u delay-300 threshold-10 duration-800">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 w-full flex-1" data-usal="once fade-u delay-300 threshold-10 duration-800">
                             {/* Logo */}
                             <div className="flex items-center justify-center py-4 order-3 md:hidden lg:flex lg:order-1">
                                 <img

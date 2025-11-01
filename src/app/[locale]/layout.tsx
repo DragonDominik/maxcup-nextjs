@@ -163,7 +163,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
 
         {/* OG and Twitter */}

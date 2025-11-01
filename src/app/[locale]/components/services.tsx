@@ -14,7 +14,7 @@ export default function WhyUs() {
                 </svg>
                 <div className="bg-[var(--dark-blue)] flex justify-center items-center relative w-full min-h-[6 0vh] 2xl:min-h-[60vw] h-fit max-h-[1000px] md:max-h-[160vw] lg:max-h-[80vw] m-0 p-0 -my-[1px]">
                     <div className="w-[90%] lg:w-[85%]">
-                        <h2 className="lg-text sintony font-bold mb-2 text-[var(--light-blue)]" data-usal="ease-in-out duration-500 threshold-100">{t("title")}</h2>
+                        <h2 className="lg-text sintony font-bold mb-2 text-[var(--light-blue)]" data-usal="once ease-in-out duration-500 threshold-100">{t("title")}</h2>
                         <Carousel />
                     </div>
                 </div>

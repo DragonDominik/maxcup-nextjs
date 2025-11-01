@@ -22,11 +22,11 @@ export default function Contact() {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-y-0 mx-auto lg:grid-cols-[40%_60%]">
                             {/* 1 */}
                             <div className="flex flex-col justify-center order-1 lg:order-1">
-                                <h2 className="lg-text sintony font-bold" data-usal="fade-d delay-100 threshold-100">{t("title")}</h2>
+                                <h2 className="lg-text sintony font-bold" data-usal="once fade-d delay-100 threshold-100">{t("title")}</h2>
                             </div>
                             {/* 2 */}
                             <div className="flex flex-col justify-center order-2 lg:order-2">
-                                <span className="w-full h-[var(--border-radius-16)] shadow-custom-box bg-[var(--dark-blue)] rounded-[var(--border-radius-16)]" data-usal="fade-d delay-100 threshold-100"></span>
+                                <span className="w-full h-[var(--border-radius-16)] shadow-custom-box bg-[var(--dark-blue)] rounded-[var(--border-radius-16)]" data-usal="once fade-d delay-100 threshold-100"></span>
                             </div>
                             {/* 3 */}
                             <div className="flex flex-col justify-start p-1 order-4 lg:order-4 items-center 2xl:items-start">
@@ -36,11 +36,11 @@ export default function Contact() {
                             </div>
                             <div className="flex flex-col justify-start items-start p-1 order-3 lg:order-3 space-y-4">
                                 {/* Description */}
-                                <p className="whitespace-pre-wrap text-justify lg:pt-1.5" data-usal="fade-r threshold-80 delay-100 duration-800">
+                                <p className="whitespace-pre-wrap text-justify lg:pt-1.5" data-usal="once fade-r threshold-80 delay-100 duration-800">
                                     {t("description")}
                                 </p>
                                 {/* Értékesítés */}
-                                <div className="space-y-2" data-usal="fade-r threshold-80 delay-100 duration-800">
+                                <div className="space-y-2" data-usal="once fade-r threshold-80 delay-100 duration-800">
                                     <span className="font-bold">{t("sales")}</span>
                                     <div className="flex flex-col space-y-2 mt-2">
                                         {/* Email */}
@@ -111,7 +111,7 @@ export default function Contact() {
                                         </div>
                                     </div>
                                 </div>
-                                <span className="flex md:hidden w-full h-[var(--border-radius-16)] shadow-custom-box bg-[var(--dark-blue)] rounded-[var(--border-radius-16)]" data-usal="fade-d delay-100 threshold-100"></span>
+                                <span className="flex md:hidden w-full h-[var(--border-radius-16)] shadow-custom-box bg-[var(--dark-blue)] rounded-[var(--border-radius-16)]" data-usal="once fade-d delay-100 threshold-100"></span>
 
                             </div>
                         </div>
