@@ -17,6 +17,11 @@ export async function POST(req: NextRequest) {
       },
     });
 
+    const safeMessage = message
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/\n/g, "<br>");
+
     const htmlBody = `
       <div style="background-color:#fff;padding:30px;font-family:Arial,sans-serif;">
         <div style="max-width:600px;margin:0 auto;background-color:rgba(229,247,247,1);border-radius:12px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.1);">
@@ -46,7 +51,7 @@ export async function POST(req: NextRequest) {
             <hr style="margin:20px 0;border:none;border-top:1px solid #ccc;">
 
             <p><strong>Message:</strong></p>
-         <p dangerouslySetInnerHTML={{ __html: message.replace(/\n/g, "<br>") }} />
+            <p>${safeMessage}</p>
 
           </div>
 
@@ -70,12 +75,12 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ message: "Email sent!" });
   } catch (err: unknown) {
-  console.error(err);
+    console.error(err);
 
-  const message =
-    err instanceof Error ? err.message : "Error sending email";
+    const message =
+      err instanceof Error ? err.message : "Error sending email";
 
-  return NextResponse.json({ message }, { status: 500 });
-}
+    return NextResponse.json({ message }, { status: 500 });
+  }
 
 }

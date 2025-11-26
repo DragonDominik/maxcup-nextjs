@@ -111,7 +111,7 @@ const Carousel: React.FC = () => {
             >
               {cards.map((card) => (
                 <div key={card.id} className="w-full flex-shrink-0 px-2">
-                  <div className="bg-[var(--mid-blue)] rounded-[var(--border-radius-24)] shadow-custom-box flex flex-col h-[130vw] mb-2">
+                  <div className="bg-[var(--mid-blue)] rounded-[var(--border-radius-24)] shadow-custom-box flex flex-col h-fit min-h-[60vh] mb-2">
                     <div className="p-6 flex flex-col flex-grow">
                       <div className="flex justify-center mb-2">
                         <Image
@@ -124,7 +124,7 @@ const Carousel: React.FC = () => {
                         />
                       </div>
                       <div className="font-bold text-center mb-1">{card.title}</div>
-                      <p className="md-text leading-relaxed flex-grow text-center">{card.text}</p>
+                      <p className="md-text leading-relaxed flex-grow text-center break-words hyphens-auto">{card.text}</p>
                       <a
                         href={`#${card.link}`}
                         className="relative flex justify-center items-center text-[var(--dark-blue)] font-medium text-sm underline mt-auto transition-transform duration-300 hover:-translate-y-0.5"

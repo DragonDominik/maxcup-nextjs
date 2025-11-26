@@ -20,10 +20,9 @@ export default function Footer() {
                                 <Image
                                     src="/img/maxcup-logo-white.webp"
                                     alt="MAX CUP"
-                                    className="h-auto max-h-25 object-contain"
                                     width={512}
                                     height={512}
-                                    style={{ objectFit: "contain" }}
+                                    style={{ width: "auto", height: "auto", objectFit: "contain", maxHeight: "6.25rem" }}
                                 />
                             </div>
                             {/* Contact */}
