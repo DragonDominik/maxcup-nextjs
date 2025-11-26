@@ -51,8 +51,6 @@ export default function SendEmailButton() {
         <div className="w-full">
             <USALProvider>
                 <form onSubmit={onSubmit} className="space-y-4">
-                    <input type="hidden" name="subject" value="Title" />
-                    <input type="hidden" name="from_name" value="Sender" />
                     {/* First row: Name + Company */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" data-usal="once fade-u delay-150 threshold-100">
                         {[

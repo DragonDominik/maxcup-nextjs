@@ -12,9 +12,6 @@ import Footer from './components/footer'
 import "@/style/main.css";
 
 export default function Page() {
-
-  
-
   return (
     <div id="page" className="m-0 p-0 w-full h-fit bg-[var(--light-blue)] max-w-[100vw]">
       <Banner />

@@ -39,7 +39,7 @@ export default function Contact() {
                                 <p className="whitespace-pre-wrap text-justify lg:pt-1.5" data-usal="once fade-r threshold-80 delay-100 duration-800">
                                     {t("description")}
                                 </p>
-                                {/* Értékesítés */}
+                                {/* Sales */}
                                 <div className="space-y-2" data-usal="once fade-r threshold-80 delay-100 duration-800">
                                     <span className="font-bold">{t("sales")}</span>
                                     <div className="flex flex-col space-y-2 mt-2">

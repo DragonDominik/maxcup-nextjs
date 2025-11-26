@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { USALProvider } from '@usal/react';
 import ContactButton from './contactBtn';
 import "@/style/main.css";
+import Image from "next/image";
 
 export default function Renting() {
     const t = useTranslations('RENTING');
@@ -23,9 +24,14 @@ export default function Renting() {
                             {/* 3 */}
                             <div className="flex flex-col justify-start p-1 order-4 lg:order-4 items-center 2xl:items-start">
                                 <div className="inline-block">
-                                    <img
-                                        src="/img/maxcup-repohar-berles.webp" alt={t("title")}
-                                        className="rounded-[var(--border-radius-50)] border-15 lg:border-15 border-[var(--mid-blue)] shadow-custom-box" data-usal="once fade-l threshold-80 delay-100 duration-800"
+                                    <Image
+                                        src="/img/maxcup-repohar-berles.webp"
+                                        alt={t("title")}
+                                        className="rounded-[var(--border-radius-50)] border-15 lg:border-15 border-[var(--mid-blue)] shadow-custom-box"
+                                        width={1024}
+                                        height={666}
+                                        style={{ objectFit: "contain" }}
+                                        data-usal="once fade-l threshold-80 delay-100 duration-800"
                                     />
                                     <ContactButton direction="left" />
                                 </div>

@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { USALProvider } from '@usal/react';
-import ContactButton from './contactBtn';
+import Image from "next/image";
 import "@/style/main.css";
 
 export default function Footer() {
@@ -17,10 +17,13 @@ export default function Footer() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 w-full flex-1" data-usal="once fade-u delay-300 threshold-10 duration-800">
                             {/* Logo */}
                             <div className="flex items-center justify-center py-4 order-3 md:hidden lg:flex lg:order-1">
-                                <img
+                                <Image
                                     src="/img/maxcup-logo-white.webp"
                                     alt="MAX CUP"
                                     className="h-auto max-h-25 object-contain"
+                                    width={512}
+                                    height={512}
+                                    style={{ objectFit: "contain" }}
                                 />
                             </div>
                             {/* Contact */}

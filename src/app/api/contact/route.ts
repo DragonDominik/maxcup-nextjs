@@ -69,8 +69,13 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ message: "Email sent!" });
-  } catch (err: any) {
-    console.error(err);
-    return NextResponse.json({ message: err.message || "Error sending email" }, { status: 500 });
-  }
+  } catch (err: unknown) {
+  console.error(err);
+
+  const message =
+    err instanceof Error ? err.message : "Error sending email";
+
+  return NextResponse.json({ message }, { status: 500 });
+}
+
 }

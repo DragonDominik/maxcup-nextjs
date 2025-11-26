@@ -1,6 +1,5 @@
 'use client';
 
-import Error from 'next/error';
 import Link from "next/link";
 import "@/style/main.css"
 

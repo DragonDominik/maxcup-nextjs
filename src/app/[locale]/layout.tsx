@@ -3,7 +3,6 @@ import { NextIntlClientProvider, hasLocale, createTranslator } from "next-intl";
 import { ReactNode } from "react";
 import { routing } from "@/i18n/routing";
 import Script from "next/script";
-import { transcode } from "buffer";
 
 type Props = {
   children: ReactNode;
@@ -25,7 +24,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const path = locale === "en" ? "" : `/${locale}`;
   const canonical = `${baseUrl}${path}`;
 
-  const jsonLd = {
+  const schemaJson = {
     "@context": "https://schema.org",
     "@type": ["Organization", "LocalBusiness"],
     "name": "Max Cup",
@@ -153,18 +152,13 @@ export default async function LocaleLayout({ children, params }: Props) {
         <link id="favicon" rel="icon" href="/img/max_cup.png" />
         <meta name="robots" content="index, follow" />
 
-        {/* ✅ Canonical */}
+        {/* Canonical */}
         <link rel="canonical" href={canonical} />
 
-        {/* ✅ Alternate Locales */}
+        {/* Alternate Locales */}
         <link rel="alternate" hrefLang="en" href={`${baseUrl}/en`} />
         <link rel="alternate" hrefLang="hu" href={`${baseUrl}/hu`} />
         <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/en`} />
-
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
 
         {/* OG and Twitter */}
         <meta property="og:title" content={t("PAGE.title")} />
@@ -183,7 +177,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           id="maxcup-jsonld"
           type="application/ld+json"
           strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaJson) }}
         />
       </head>
       <body suppressHydrationWarning>

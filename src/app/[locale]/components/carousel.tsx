@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { USALProvider } from "@usal/react";
+import Image from "next/image";
 import { useTranslations } from 'next-intl';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "@/style/main.css";
@@ -75,10 +76,13 @@ const Carousel: React.FC = () => {
             >
               <div className="p-4 flex flex-col flex-grow">
                 <div className="flex justify-center mb-2">
-                  <img
+                  <Image
                     src={card.icon}
-                    alt={`${card.title} icon`}
+                    alt={`${card.title}`}
                     className="h-[80px] xl:h-[100px] w-auto object-contain"
+                    width={400}
+                    height={400}
+                    style={{ objectFit: "contain" }}
                   />
                 </div>
                 <div className="font-bold text-center mb-1">{card.title}</div>
@@ -110,10 +114,13 @@ const Carousel: React.FC = () => {
                   <div className="bg-[var(--mid-blue)] rounded-[var(--border-radius-24)] shadow-custom-box flex flex-col h-[130vw] mb-2">
                     <div className="p-6 flex flex-col flex-grow">
                       <div className="flex justify-center mb-2">
-                        <img
+                        <Image
                           src={card.icon}
                           alt={`${card.title} icon`}
                           className="h-[100px] w-auto object-contain"
+                          width={400}
+                          height={400}
+                          style={{ objectFit: "contain" }}
                         />
                       </div>
                       <div className="font-bold text-center mb-1">{card.title}</div>
